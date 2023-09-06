@@ -1,53 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <title>Aula></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-wigth, initial-scale=1.0">
+    <title>PW</title>
     <style>
         body {
             margin: 0;
         }
-        .cab {
-            background-color: blue; 
+        .cabeca {
+            background-color:black;
             padding: 20px;
+            color:white;
             text-align: center;
-
+            margin: 0;
+        }
+        .menu {
+            background-color:black;
         }
         .menu a {
             color:black;
-            text-decoration: none;
+            text-decoration: nome;
             display: block;
             float: left;
-            padding: 10px ;
-
+            padding: 10px;
         }
         .menu a:hover{
-            color:purple;
-            background-color:chartreuse;
-
+            color:blue;
+            background-color: blue;
         }
         .col-lateral {
-            float:left;}
-        </style>
+            float: left;
+            width: 20%;
+            background-color: blue;
+        }
+        .col-centro {
+            float: left;
+            width: 60%;
+            background-color:blue;
+
+        }
+        .conteudo {
+            clear: both;
+        }
+        .rodape {
+            background-color: blue;
+            text-align: center;
+            padding: 25px;
+        }
+        .rodape p{
+            padding: 25px;
+        }
+             </style>
 </head>
-</body>
-<div class="cab">
-    <h1>Cabeçalho</h1>
+<body>
+    <div class="cabeca">
+        <h1>Cabeçalho</h1>
     </div>
     <div class="menu">
         <a href="#">Home</a>
         <a href="#">Blog</a>
         <a href="#">Serviços</a>
         <a href="#">Sobre</a>
-    </div class= "Conteudo">
-    </div>
-    <h2>Lado</h2>
-    <p>Conteúdo principal</p>
-    <div class= "Col-lateral">  
-        <h2>Meio</h2> 
-        <p>Essa é a coluna da direita</p>
-    </div class=" Col- lateral">
-    <h2>Meio</h2>
-    <p>Essa é a coluna da esquerda</p>
 
-</body>
-</htmll>
+    </div>
+    <div class="conteudo">
+        <div class="col-lateral">
+                <h2>Lado</h2>
+                <p>Essa é a coluna da esquerda.</p>
+        </div>
+
+        <div class="col-centro">
+                <h2>Meio</h2>
+                <p>Conteúdo principal.</p>
+        </div>
+
+        <div class="col-lateral">
+                <h2>Lado</h2>
+                <p>Essa é a coluna da direita.</p>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>Esse é o rodape</p>
+
+    </div>
+
+</body>   
+</html>
